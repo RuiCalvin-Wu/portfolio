@@ -67,7 +67,7 @@ export default function Page() {
       <main className="max-w-4xl mx-auto px-6">
 
         {/* ── Featured Projects ─────────────────────────────── */}
-        <section id="projects" className="py-24">
+        <section id="projects" className="py-24 scroll-mt-14">
           <h2 className="text-2xl font-bold">Featured Projects</h2>
           <p className="mt-1 text-slate-500 dark:text-slate-400 text-sm">A selection of things I&apos;ve built.</p>
 
