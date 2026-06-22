@@ -29,7 +29,7 @@ export default function Page() {
       <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-950">
         <div className="max-w-2xl">
           <p className="text-indigo-400 text-sm font-medium tracking-widest uppercase mb-4">
-            Open to opportunities · Hong Kong
+            Open to opportunities · Kowloon, Hong Kong
           </p>
 
           <h1 className="text-5xl sm:text-6xl font-bold text-white tracking-tight">
