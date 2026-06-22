@@ -20,6 +20,10 @@ const projects = [
   },
 ]
 
+/**
+ * Renders Calvin Wu's portfolio homepage.
+ * @returns {React.ReactNode} The portfolio page component.
+ */
 export default function Page() {
   return (
     <>

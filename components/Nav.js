@@ -1,6 +1,11 @@
 'use client'
 import { useEffect, useState } from 'react'
 
+/**
+ * Renders a fixed navigation header with site branding, links, and a theme toggle.
+ * The header styling changes based on scroll position.
+ * @returns {React.ReactElement} The navigation header element.
+ */
 export default function Nav() {
   const [dark, setDark] = useState(false)
   const [scrolled, setScrolled] = useState(false)

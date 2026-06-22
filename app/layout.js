@@ -5,6 +5,10 @@ export const metadata = {
 
 import '../styles/globals.css'
 
+/**
+ * Root layout component that renders the application shell with dark mode support.
+ * Loads the Inter font, applies light or dark theme based on localStorage preference or system settings, and provides base styling for the entire application.
+ */
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>

@@ -1,3 +1,13 @@
+/**
+ * Renders a project summary card component.
+ * @param {Object} project - The project data.
+ * @param {string} project.image - The URL of the project's image.
+ * @param {string} project.title - The project title.
+ * @param {string} project.description - A brief description of the project.
+ * @param {string[]} project.tech - An array of technology tags used in the project.
+ * @param {string} project.demo - The URL to the project's live demo.
+ * @param {string} project.repo - The URL to the project's repository.
+ */
 export default function ProjectCard({ project }) {
   return (
     <article className="flex flex-col rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
