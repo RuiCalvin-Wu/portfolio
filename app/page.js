@@ -33,7 +33,7 @@ export default function Page() {
           </p>
 
           <h1 className="text-5xl sm:text-6xl font-bold text-white tracking-tight">
-            Calvin Wu
+            Rui Xuan Calvin Wu
           </h1>
 
           <p className="mt-3 text-lg font-medium text-slate-300">
