@@ -10,7 +10,7 @@ This repository contains the source code for my personal portfolio website, wher
 
 ## About
 
-I'm a software developer with an interest in building clean, scalable, and user-focused applications. This portfolio serves as a central place to highlight my work, document my learning journey, and demonstrate my approach to software engineering.
+I'm a software engineer with an interest in building clean, scalable, and user-focused applications. My main focus is ML and AI integration side for businesses. This portfolio serves as a central place to highlight my work, document my learning journey, and demonstrate my approach to software engineering and my growth in the tech industry.
 
 ## Features
 
