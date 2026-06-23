@@ -1,49 +1,119 @@
-# Next.js + Tailwind Portfolio
+# 👋 Hi, I'm Calvin Wu
 
-This repository contains a minimal Next.js (app router) portfolio template using Tailwind CSS. It's set up for static export and is optimized for deployment to Vercel.
+Welcome to my portfolio repository.
 
-Features included:
-- Next.js app router
-- Tailwind CSS
-- Responsive hero, projects list, and contact form (Formspree placeholder)
-- Dark mode toggle (client-side)
+This repository contains the source code for my personal portfolio website, where I showcase my projects, technical skills, and professional experience.
 
-Getting started (locally):
+🌐 **Live Website:** https://www.rui-xuan-calvin-wu.me
 
-1. Clone the repo
+---
 
-   git clone https://github.com/RuiCalvin-Wu/portfolio.git
-   cd portfolio
+## About
 
-2. Install dependencies
+I'm a software developer with an interest in building clean, scalable, and user-focused applications. This portfolio serves as a central place to highlight my work, document my learning journey, and demonstrate my approach to software engineering.
 
-   npm install
+## Features
 
-3. Run development server
+* Responsive design for desktop and mobile devices
+* Project showcase with descriptions and technologies used
+* Professional experience and background information
+* Skills and technology overview
+* Contact information and external links
+* Fast performance and optimized user experience
 
-   npm run dev
+## Tech Stack
 
-Build and static export:
+This portfolio was built using modern web technologies, including:
 
-  npm run build
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* Git & GitHub
+* Vercel
 
-Deploying to Vercel (recommended):
+## Getting Started
 
-1. Push the repo to GitHub (already done).
-2. Visit https://vercel.com/new and import the repository.
-3. Use the default build settings — Vercel auto-detects Next.js.
-4. For a static export, set the output to "standalone" or use the default Next.js settings — Vercel will handle incremental/static rendering.
+### Prerequisites
 
-Using a custom domain (Namecheap):
+Make sure you have the following installed:
 
-1. Buy or use your Namecheap domain.
-2. In Vercel, go to your project > Settings > Domains and add your domain.
-3. Follow Vercel's DNS instructions in Namecheap — typically adding an A/ALIAS or CNAME record.
+* Node.js
+* npm
 
-Next steps / Customization suggestions:
-- Replace placeholder images with real screenshots or GIFs of your projects (public/ or remote URLs).
-- Replace Formspree ID with your own endpoint.
-- Add a resume.pdf to the public/ folder.
-- Consider adding shadcn/ui for prebuilt component primitives if you want a more polished UI.
+### Installation
 
-License: MIT
+Clone the repository:
+
+```bash
+git clone https://github.com/<your-username>/<repository-name>.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd <repository-name>
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and visit:
+
+```text
+http://localhost:5173
+```
+
+## Available Scripts
+
+```bash
+npm run dev       # Start development server
+npm run build     # Build for production
+npm run preview   # Preview production build locally
+npm run lint      # Run linting checks
+```
+
+## Deployment
+
+The application is deployed using Vercel.
+
+Production deployments are triggered from the `main` branch, while preview deployments can be used to validate changes before release.
+
+## Project Structure
+
+```text
+.
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── hooks/
+│   └── utils/
+├── package.json
+├── vite.config.ts
+└── README.md
+```
+
+## Contact
+
+Feel free to connect with me:
+
+* Portfolio: https://www.rui-xuan-calvin-wu.me
+* GitHub: https://github.com/<your-username>
+* LinkedIn: https://www.linkedin.com/in/<your-linkedin-profile>
+
+## License
+
+This project is intended for portfolio and educational purposes.
+
+© Calvin Wu. All rights reserved.
