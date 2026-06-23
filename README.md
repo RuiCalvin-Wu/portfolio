@@ -109,8 +109,8 @@ Production deployments are triggered from the `main` branch, while preview deplo
 Feel free to connect with me:
 
 * Portfolio: https://www.rui-xuan-calvin-wu.me
-* GitHub: https://github.com/<your-username>
-* LinkedIn: https://www.linkedin.com/in/<your-linkedin-profile>
+* GitHub: https://github.com/RuiCalvin-Wu
+* LinkedIn: https://www.linkedin.com/in/calvin-w-80646b219/
 
 ## License
 
