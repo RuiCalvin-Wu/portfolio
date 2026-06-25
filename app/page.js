@@ -6,22 +6,15 @@ import FloatingParticles from '../components/FloatingParticles'
 import ScrollReveal from '../components/ScrollReveal'
 
 const projects = [
-  {
-    title: 'Linguista — Language Learning Agent',
-    description: 'Multilingual language learning agent processing word datasets across 20+ languages. Features data ingestion and cleaning pipelines with LLM integration for intelligent, conversational language tutoring.',
-    image: 'https://placehold.co/800x450/312e81/a5b4fc?text=Linguista',
-    tech: ['Python', 'pandas', 'LLM Integration', 'Data Pipelines'],
-    demo: '#',
-    repo: 'https://github.com/RuiCalvin-Wu',
-  },
-  {
-    title: 'Full-Stack Asset Tracking System',
-    description: 'Production asset tracking system built for a real client at Full Stack Co. Covers full-stack development with a RESTful API backend, cross-platform UI, and real-time error monitoring via Sentry.',
-    image: 'https://placehold.co/800x450/0c1a2e/60a5fa?text=Asset+Tracker',
-    tech: ['C#', '.NET Blazor MAUI', 'MS SQL Server', 'REST APIs', 'Sentry'],
-    demo: '#',
-    repo: 'https://github.com/RuiCalvin-Wu',
-  },
+  // Add projects here:
+  // {
+  //   title: 'Project Name',
+  //   description: 'What it does.',
+  //   image: 'https://placehold.co/800x450/312e81/a5b4fc?text=Project',
+  //   tech: ['React', 'Node.js'],
+  //   demo: '#',
+  //   repo: 'https://github.com/RuiCalvin-Wu',
+  // },
 ]
 
 export default function Page() {
@@ -106,13 +99,17 @@ export default function Page() {
             <p className="mt-1 text-slate-500 dark:text-slate-400 text-sm">A selection of things I&apos;ve built.</p>
           </ScrollReveal>
 
-          <div className="mt-8 grid gap-6 sm:grid-cols-2">
-            {projects.map((p, i) => (
-              <ScrollReveal key={p.title} delay={i * 150}>
-                <ProjectCard project={p} />
-              </ScrollReveal>
-            ))}
-          </div>
+          {projects.length > 0 ? (
+            <div className="mt-8 grid gap-6 sm:grid-cols-2">
+              {projects.map((p, i) => (
+                <ScrollReveal key={p.title} delay={i * 150}>
+                  <ProjectCard project={p} />
+                </ScrollReveal>
+              ))}
+            </div>
+          ) : (
+            <p className="mt-8 text-slate-400 dark:text-slate-500 text-sm italic">Coming soon.</p>
+          )}
         </section>
 
         {/* ── Footer ────────────────────────────────────────── */}
