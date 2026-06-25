@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
+import SmoothScrollLink from './SmoothScrollLink'
 
 export default function Nav() {
   const [dark, setDark] = useState(false)
@@ -32,7 +33,7 @@ export default function Nav() {
         <span className="font-semibold text-sm tracking-tight">吴锐轩</span>
 
         <div className="flex items-center gap-5">
-          <a href="#projects" className="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">Projects</a>
+          <SmoothScrollLink href="#projects" className="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">Projects</SmoothScrollLink>
           <a href="https://github.com/RuiCalvin-Wu" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">GitHub</a>
           <button onClick={toggleDark} aria-label="Toggle theme" className="p-1.5 rounded-md text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
             {dark ? (

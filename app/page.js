@@ -1,5 +1,6 @@
 import Nav from '../components/Nav'
 import ProjectCard from '../components/ProjectCard'
+import SmoothScrollLink from '../components/SmoothScrollLink'
 
 const projects = [
   {
@@ -57,10 +58,10 @@ export default function Page() {
             </a>
           </div>
 
-          <a href="#projects" className="mt-14 inline-flex flex-col items-center gap-1 text-slate-500 hover:text-slate-300 transition-colors">
+          <SmoothScrollLink href="#projects" className="mt-14 inline-flex flex-col items-center gap-1 text-slate-500 hover:text-slate-300 transition-colors">
             <span className="text-xs tracking-widest uppercase">Projects</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="animate-bounce"><path d="m6 9 6 6 6-6"/></svg>
-          </a>
+          </SmoothScrollLink>
         </div>
       </section>
 
