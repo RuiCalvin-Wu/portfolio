@@ -3,12 +3,12 @@ const isRealUrl = (url) => url && url !== '#'
 export default function ProjectCard({ project }) {
   const tech = project.tech ?? []
   return (
-    <article className="flex flex-col rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
+    <article className="project-card flex flex-col rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 overflow-hidden shadow-sm">
       <div className="aspect-video bg-slate-100 dark:bg-slate-800 overflow-hidden">
         <img
           src={project.image}
           alt={project.title}
-          className="w-full h-full object-cover"
+          className="project-card-image w-full h-full object-cover"
         />
       </div>
 

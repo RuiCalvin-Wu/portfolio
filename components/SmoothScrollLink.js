@@ -1,6 +1,6 @@
 'use client'
 
-export default function SmoothScrollLink({ href, className, children }) {
+export default function SmoothScrollLink({ href, className, children, style }) {
   function handleClick(e) {
     e.preventDefault()
     const id = href.replace('#', '')
@@ -11,7 +11,7 @@ export default function SmoothScrollLink({ href, className, children }) {
   }
 
   return (
-    <a href={href} onClick={handleClick} className={className}>
+    <a href={href} onClick={handleClick} className={className} style={style}>
       {children}
     </a>
   )

@@ -28,7 +28,7 @@ export default function Nav() {
   }
 
   return (
-    <header className={`fixed top-0 inset-x-0 z-50 transition-all duration-200 ${scrolled ? 'bg-white/90 dark:bg-slate-950/90 backdrop-blur border-b border-slate-200 dark:border-slate-800' : 'bg-transparent'}`}>
+    <header className={`nav-animate fixed top-0 inset-x-0 z-50 transition-all duration-200 ${scrolled ? 'bg-white/90 dark:bg-slate-950/90 backdrop-blur border-b border-slate-200 dark:border-slate-800' : 'bg-transparent'}`}>
       <nav className="max-w-4xl mx-auto px-6 h-14 flex items-center justify-between">
         <span className="font-semibold text-sm tracking-tight">吴锐轩</span>
 
