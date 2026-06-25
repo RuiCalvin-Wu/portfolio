@@ -4,6 +4,7 @@ export const metadata = {
 }
 
 import '../styles/globals.css'
+import { LanguageProvider } from '../components/LanguageContext'
 
 export default function RootLayout({ children }) {
   return (
@@ -17,7 +18,9 @@ export default function RootLayout({ children }) {
         }} />
       </head>
       <body className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 antialiased">
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   )
