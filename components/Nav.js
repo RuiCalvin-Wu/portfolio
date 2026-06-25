@@ -1,10 +1,13 @@
 'use client'
 import { useEffect, useState } from 'react'
 import SmoothScrollLink from './SmoothScrollLink'
+import AnimatedText from './AnimatedText'
+import { useLanguage } from './LanguageContext'
 
 export default function Nav() {
   const [dark, setDark] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const { lang, toggleLang } = useLanguage()
 
   useEffect(() => {
     setDark(document.documentElement.classList.contains('dark'))
@@ -33,8 +36,15 @@ export default function Nav() {
         <span className="font-semibold text-sm tracking-tight">吴锐轩</span>
 
         <div className="flex items-center gap-5">
-          <SmoothScrollLink href="#projects" className="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">Projects</SmoothScrollLink>
+          <SmoothScrollLink href="#projects" className="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">
+            <AnimatedText textKey="nav.projects" />
+          </SmoothScrollLink>
           <a href="https://github.com/RuiCalvin-Wu" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">GitHub</a>
+
+          <button onClick={toggleLang} aria-label="Toggle language" className="px-2 py-1 rounded-md text-xs font-medium text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors border border-slate-200 dark:border-slate-700">
+            {lang === 'en' ? '中文' : 'EN'}
+          </button>
+
           <button onClick={toggleDark} aria-label="Toggle theme" className="p-1.5 rounded-md text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
             {dark ? (
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
